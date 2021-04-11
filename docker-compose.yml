@@ -25,6 +25,12 @@ services:
     volumes:
       - /app/node_modules
       - ./backend:/app
+    environment:
+      MYSQL_HOST:  mysql
+      MYSQL_USER: root
+      MYSQL_ROOT_PASSWORD: awdsd123
+      MYSQL_DATABASE: myapp
+      MYSQL_PORT: 3306
 #  mysql:
 #    build: ./mysql    #Dockerfile.dev가 아니므로 자동으로 Dockerfile을 찾음
 #    restart: unless-stopped
