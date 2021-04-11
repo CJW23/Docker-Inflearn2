@@ -5,6 +5,6 @@ USE myapp;
 
 CREATE TABLE lists (
     id INTEGER AUTO_INCREMENT,
-    value TEXT,
+    value VARCHAR(50),
     PRIMARY KEY (id)
 );
