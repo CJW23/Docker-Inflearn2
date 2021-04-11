@@ -5,12 +5,12 @@ const app = express();
 
 app.use(bodyParser.json());
 
-/*db.pool.query(`CREATE TABLE lists (
+db.pool.query(`CREATE TABLE lists (
     id INTEGER AUTO_INCREMENT,
     value TEXT,
     PRIMARY KEY (id))`, (err, rst, fields) => {
     console.log('result1', err);
-});*/
+});
 
 //조회
 app.get('/api/values', function (req, res) {
