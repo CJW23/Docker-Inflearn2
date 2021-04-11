@@ -16,9 +16,9 @@
       "memory": 128
     },
     {
-      "name": "nginx",
+      "name": "proxy-nginx",
       "image": "cjw7242/docker-nginx",
-      "hostname": "nginx",
+      "hostname": "proxy-nginx",
       "essential": true,
       "portMappings": [
         {
